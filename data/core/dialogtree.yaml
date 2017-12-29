@@ -1,0 +1,106 @@
+---
+0:
+    - "You don't look like you're from around here."
+    - - "I've lived here all my life!"
+      - 1
+      - None
+    - - "I come from the west."
+      - 3
+      - None
+
+1:
+    - "Oh really? Than you must know Mr. Bowler."
+    - - "Mr. Bowler is a good friend of mine!"
+      - 2
+      - None
+    - - "Who?"
+      - 6
+      - None
+
+2:
+    - "You liar! There ain't no Mr. Bowler, I made him up!"
+    - - "Ok, you got me. I'm from Springville."
+      - 5
+      - "self.npc_owner.likes_player -= 2"
+
+3:
+    - "Well, the west is a big place. Wich Town."
+    - - "I fell out of the sky."
+      - 4
+      - None
+    - - "You don't need to know."
+      - 8
+      - None
+
+4:
+    - "And you think i believe that!"
+    - - "No! Really, i fell out of the sky."
+      - 12
+      - None
+    - - "I'm just joking. I'm from Springville."
+      - 1
+      - None
+
+5:
+    - "Springville, eh? I heard there's trouble brewing down there."
+    - - "I haven't heard about any trouble."
+      - 6
+      - None
+    - - "Yes the mohawk gang atacked our town."
+      - 11
+      - None
+
+6:
+    - "Don't you worry about it. Say, do you have something to eat? I'm starving."
+    - - "Yes, actually. Here, have a banana."
+      - 10
+      - None
+    - - "No, sorry; I'm starving too."
+      - 7
+      - None
+
+7:
+    - "Too bad. Have a nice day!."
+    - - "->"
+      - end
+      - "self.npc_owner.likes_player += 1"
+
+8:
+    - "Ok, I was just asking."
+    - - "No problem. It's just private."
+      - 9
+      - "self.npc_owner.likes_player -= 1"
+
+9:
+    - "Say, do you have something to eat? I'm starving."
+    - - "Yes, actually. Here, have a banana."
+      - 10
+      - None
+    - - "No, sorry; I'm starving too."
+      - 7
+      - None
+
+10:
+    - "Thanks! I will remember you. Have a nice day."
+    - - "->"
+      - end
+      - "self.npc_owner.likes_player += 3"
+
+11:
+    - "Too bad. Say, do you have something to eat? I'm starving."
+    - - "Yes, actually. Here, have a banana."
+      - 10
+      - None
+    - - "No, sorry; I'm starving too."
+      - 7
+      - None
+
+12:
+    - "I don't believe you but that dont matter now. Do you have some food for me?"
+    - - "Yes, actually. Here, have a banana."
+      - 10
+      - None
+    - - "No, sorry; I'm starving too."
+      - 7
+      - None
+...
